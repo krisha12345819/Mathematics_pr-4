@@ -140,7 +140,117 @@ Spread-Locator/
 - Connected statistical theory with business insights
 
 ---
+---
 
+# 📊 Visual Analysis Outputs & Interpretation
+
+---
+
+## 1️⃣ Probability Density Function (PDF)
+
+<p align="center">
+  <img src="./pdf.png" width="700">
+</p>
+
+**Interpretation:**
+- Shows probability density of transaction amounts.
+- Distribution is highly right-skewed.
+- Majority of transactions occur in lower range.
+- High-value transactions have low probability but long tail impact.
+
+---
+
+## 2️⃣ Log-Normal Distribution Fit
+
+<p align="center">
+  <img src="./log_normal.png" width="700">
+</p>
+
+**Interpretation:**
+- Transaction amounts follow Log-Normal behavior.
+- Better fit compared to Normal distribution.
+- Suitable for modeling financial data.
+- Captures skewness and heavy-tail characteristics.
+
+---
+
+## 3️⃣ Log of Transaction Amount (Normality Check)
+
+<p align="center">
+  <img src="./normal.png" width="700">
+</p>
+
+**Interpretation:**
+- After log transformation, distribution becomes approximately Normal.
+- Confirms assumption of Log-Normal distribution.
+- Reduces skewness significantly.
+- Useful for statistical modeling and hypothesis testing.
+
+---
+
+## 4️⃣ Poisson Distribution (Transaction Frequency)
+
+<p align="center">
+  <img src="./possion_distribution.png" width="700">
+</p>
+
+**Interpretation:**
+- Models number of transactions per day.
+- Suitable for count-based event modeling.
+- Mean ≈ Variance condition approximately satisfied.
+- Useful for forecasting daily transaction load.
+
+---
+
+## 5️⃣ Q-Q Plot (Normality Test)
+
+<p align="center">
+  <img src="./q-q.png" width="700">
+</p>
+
+**Interpretation:**
+- Points align closely with diagonal line.
+- Indicates log-transformed data follows Normal distribution.
+- Minor deviation in extreme tails (expected in financial data).
+
+---
+
+## 6️⃣ Box-Cox Transformation
+
+<p align="center">
+  <img src="./box-cox.png" width="700">
+</p>
+
+**Interpretation:**
+- Applied to stabilize variance.
+- Reduced skewness further.
+- Improved symmetry of distribution.
+- Enhances model assumptions for parametric testing.
+
+---
+
+## 7️⃣ Cumulative Distribution Function (CDF)
+
+<p align="center">
+  <img src="./cdf.png" width="700">
+</p>
+
+**Interpretation:**
+- Shows cumulative probability of transaction amounts.
+- Helps estimate probability of transactions below certain threshold.
+- Useful for risk assessment and revenue distribution analysis.
+
+---
+
+# 📌 Overall Insight
+
+- Financial transaction data does not follow pure Normal distribution.
+- Log-Normal model best describes transaction amounts.
+- Poisson effectively models transaction frequency.
+- Transformations like Log & Box-Cox improve statistical assumptions.
+- Heavy-tail behavior indicates rare but high-impact transactions.
+
+---
 ## 👨‍💻 Author
 
 Krisha anghan
